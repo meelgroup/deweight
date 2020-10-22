@@ -1,11 +1,16 @@
 # DeWeight
 A tool to reduce discrete integration to unweighted model counting.
 
+To read more about DeWeight, please refer to [our paper](https://arxiv.org/abs/2010.10724):
+```
+Jeffrey M. Dudek, Dror Fried, and Kuldeep S. Meel. Taming Discrete Integration via the Boon of Dimensionality. In Proc. of NeurIPS, 2020.
+```
+
 ## Installation
 
 Requires gcc and make.
 ```
-git clone https://github.com/Kasekopf/Deweight.git
+git clone https://github.com/meelgroup/deweight
 cd Deweight
 make -C deweight
 ```
