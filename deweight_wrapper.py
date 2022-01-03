@@ -65,7 +65,7 @@ def run(args):
                 output_pair("ApproxMC Time", line.split()[-2])
             elif "i.e. we got exact count" in line:
                 exact = True
-            elif line.startswith("[appmc] Number of solutions is:"):
+            elif line.startswith("c [appmc] Number of solutions is:"):
                 components = line.split()[-1].split("*")  # solutions are of the form "A*2**B"
                 solutions = int(components[0]) * (2 ** int(components[-1]))
                 output_pair("Solutions", solutions)
